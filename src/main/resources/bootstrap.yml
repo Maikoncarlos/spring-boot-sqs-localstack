@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: spring-boot-sqs-localstack
+---
+spring:
+  config:
+    activate:
+      on-profile: localsatck
+aws:
+  paramstore:
+    enabled: true
+    endpoint: http://localstack:4566
